@@ -1,0 +1,7 @@
+/* grid.css — 12 欄 Grid System */
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1rem}
+.row{display:grid;grid-template-columns:repeat(12,1fr);gap:1.25rem}
+.col-12{grid-column:span 12}.col-8{grid-column:span 8}.col-6{grid-column:span 6}
+.col-9{grid-column:span 9}.col-4{grid-column:span 4}.col-3{grid-column:span 3}
+@media (max-width:900px){.col-9,.col-8,.col-6,.col-4,.col-3{grid-column:span 12}.col-md-6{grid-column:span 6}}
+@media (max-width:560px){.col-md-6{grid-column:span 12}}

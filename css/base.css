@@ -1,0 +1,20 @@
+/* base.css — 變數、重置、字體 */
+:root{
+  --bg:#fff8ee; --surface:#ffffff; --ink:#2b2118; --muted:#6b5b4b;
+  --accent:#d9561f; --accent-dark:#a83d10; --green:#2f7a4f; --line:#ecd9bf;
+  --radius:14px; --shadow:0 6px 20px rgba(60,35,10,.10);
+  --font:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,-apple-system,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.8;font-size:16px}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--accent-dark)}
+a:hover{color:var(--accent)}
+h1,h2,h3{line-height:1.35;margin:0 0 .6em}
+h1{font-size:clamp(1.9rem,5vw,3.2rem)}
+h2{font-size:clamp(1.4rem,3vw,1.9rem);border-left:6px solid var(--accent);padding-left:.6rem}
+h3{font-size:1.2rem;color:var(--green)}
+p{margin:0 0 1em}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:8px;top:8px;background:#fff;padding:.5rem;z-index:99}

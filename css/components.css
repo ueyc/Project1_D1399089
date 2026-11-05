@@ -1,0 +1,17 @@
+/* components.css — 卡片、表格、按鈕、圖片 */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.25rem;box-shadow:var(--shadow);height:100%}
+.card h3{margin-top:0}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:.7rem 1.4rem;border-radius:999px;text-decoration:none;font-weight:700}
+.btn:hover{background:var(--accent-dark);color:#fff}
+.tag{display:inline-block;background:#fde7c8;color:var(--accent-dark);border-radius:999px;padding:.1rem .7rem;font-size:.85rem;font-weight:700;margin:0 .3rem .3rem 0}
+.stat{font-size:2.4rem;font-weight:800;color:var(--accent);line-height:1.1}
+.table-wrap{overflow-x:auto;margin-bottom:1.5rem}
+table{width:100%;border-collapse:collapse;background:var(--surface);min-width:520px}
+th,td{border:1px solid var(--line);padding:.7rem;text-align:left;vertical-align:top}
+th{background:#fde7c8}
+figure{margin:0 0 1.5rem}
+figcaption{font-size:.9rem;color:var(--muted);margin-top:.4rem}
+figure img{border-radius:var(--radius);border:1px solid var(--line)}
+section{margin-bottom:2.5rem}
+blockquote{margin:0 0 1rem;padding:1rem 1.25rem;background:#fff;border-left:5px solid var(--green);border-radius:8px}
+.members{display:flex;flex-wrap:wrap;gap:.4rem}

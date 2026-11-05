@@ -1,0 +1,22 @@
+/* layout.css — 導覽列、側邊欄、頁首、頁尾 */
+.site-header{position:sticky;top:0;z-index:50;background:var(--surface);border-bottom:3px solid var(--accent);box-shadow:var(--shadow)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:64px}
+.brand{font-weight:800;font-size:1.15rem;color:var(--accent-dark);text-decoration:none}
+.nav-toggle,.nav-btn{display:none}
+.nav-list{display:flex;gap:.25rem;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+.nav-list a{display:block;padding:.5rem .8rem;border-radius:999px;text-decoration:none;color:var(--ink);font-weight:600}
+.nav-list a:hover,.nav-list a[aria-current="page"]{background:var(--accent);color:#fff}
+.hero{position:relative;color:#fff;background:#2b2118}
+.hero img{width:100%;height:clamp(300px,52vw,560px);object-fit:cover;opacity:.55}
+.hero-text{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center}
+.hero-text p{max-width:38rem;font-size:1.1rem}
+.page-title{background:linear-gradient(120deg,var(--accent),#f1a43b);color:#fff;padding:2rem 0}
+.page-title h1{margin:0;font-size:clamp(1.6rem,4vw,2.4rem)}
+.layout{padding:2rem 0 3rem}
+.sidebar{align-self:start;position:sticky;top:84px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1rem}
+.sidebar h2{font-size:1rem;border:0;padding:0;color:var(--green)}
+.sidebar ul{list-style:none;margin:0;padding:0}
+.sidebar a{display:block;padding:.35rem .5rem;border-radius:8px;text-decoration:none;color:var(--ink)}
+.sidebar a:hover{background:var(--bg);color:var(--accent)}
+.site-footer{background:#2b2118;color:#f3e3cc;padding:2rem 0;text-align:center;font-size:.9rem}
+.site-footer a{color:#ffd29a}
